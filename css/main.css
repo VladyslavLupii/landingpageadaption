@@ -1,0 +1,255 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #201b2d;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+
+/* у меня после сохранения вот так переносятся теги. В ответе на дз, подскажите как это исправить, спасибо) */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #201b2d;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(78, 192, 254, 1);
+    background: -moz-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78, 192, 254, 1)), color-stop(100%, rgba(55, 144, 217, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    background: linear-gradient(135deg, rgba(78, 192, 254, 1) 0%, rgba(55, 144, 217, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4ec0fe', endColorstr='#3790d9', GradientType=1);
+    padding-top: 65px;
+    padding-bottom: 92px;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer {
+    width: 557px;
+}
+
+.title {
+    font-size: 36px;
+    color: #fff;
+}
+
+.title span {
+    font-size: 59px;
+}
+
+.intro {
+    margin-bottom: 43px;
+    width: 407px;
+}
+
+.travel {
+    margin-top: 62px;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    background: #ffd429;
+    color: #2e2a1b;
+    display: block;
+    width: 205px;
+    padding: 17px 0;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 43px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: #ccac2b;
+}
+
+.learn {
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+
+.selection-title {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 42px;
+}
+
+.chance {
+    width: 350px;
+    background: url('../img/time.jpg') no-repeat top;
+    padding-top: 90px;
+    text-align: center;
+}
+
+.me-infuture {
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+}
+
+.chance-title {
+    font-size: 19px;
+}
+
+.travel-chns {
+    width: 265px;
+    background: url('../img/palm.jpg') no-repeat top;
+}
+
+.chance-values {
+    width: 350px;
+    background: url('../img/rocket.jpg') no-repeat top;
+}
+
+.mail {
+    background: #ecf3f8;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input {
+    padding: 17px;
+    margin: 10px;
+    width: 341px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    border: 1px solid #bbbbbb;
+    border-radius: 2px;
+}
+
+.btn-input {
+    padding: 20px;
+    margin: 10px;
+    width: 341px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.footer {
+    background: #164d7a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0;
+}
+
+.credits {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/* Responsive */
+
+
+/* 992px - 1200px */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .travel {
+        width: 550px;
+    }
+
+}
+
+
+/* 768px - 992px */
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .offer {
+        width: auto;
+    }
+    .intro {
+        width: auto;
+    }
+    .travel {
+        display: block;
+	    width: 641px;
+	    margin: 62px auto 0;
+    }
+    .me-infuture {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 500px; 
+        margin-bottom: 90px;
+    }
+    .chance {
+        margin-bottom: 20px;
+    }
+        
+}
+
+/* 576px - 768px */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+     }
+     .travel {
+         width: 550px;
+     }
+}
+    
+/* 320px - 576px */
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .travel {
+        width: 300px;
+    }
+    .chance {
+        width: 300px;
+    }
+    .input {
+        width: 300px;
+        margin-bottom: 0;
+    }
+    .btn-input {
+        width: 310px;
+    }
+}
